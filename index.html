@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="dashboard">
+        <div class="welcome-section">
+            <h1>Olá, <span>Leonardo</span>! </h1>
+            <p>Bem-vindo ao seu painel. Vamos focar nos objetivos de hoje?</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Criadas</h3>
+                <div class="number" id="totalTasks">0</div>
+            </div>
+            <div class="stat-card completed-card">
+                <h3>Concluídas</h3>
+                <div class="number" id="completedTasks">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Pendentes</h3>
+                <div class="number" id="pendingTasks">0</div>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="O que tem para fazer agora?">
+            <button id="addBtn">Criar</button>
+        </div>
+
+        <ul class="task-list" id="taskList">
+        </ul>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
